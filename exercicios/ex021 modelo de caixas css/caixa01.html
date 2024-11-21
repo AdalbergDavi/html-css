@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelode caixa</title>
+    <style>
+        h1 { /* BOX-LEVEL*/
+
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+
+            /*top - acima
+            rigth - direita
+            bottom - abaixo
+            left - esquerda*/
+
+            /*acima do padding*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: aquamarine;
+            /*border: 10px solid blue; (simplificado)*/
+            
+            /*acima da linha da frase*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*padding: 10px 10px 10px 10px; (simplificado) ou
+            padding: 10px; se todos os valores foresm iguais ou
+            padding: 10px 20px; o mesmo valor sera igual em vestical 10px e horizontal 20px*/
+
+            /*acima do outline*/
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 11px;
+            /*margin: 20px 10px 40px 11px  (simplificado)*/
+
+            /*entre a borda e a margin*/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;
+            /*outline: 5px dashed black; (simplificado)*/ 
+
+        }
+        a { /*INLINE-LEVEL*/
+
+            text-align: center;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: aquamarine;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: black;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafo tambem sao exemplos de box-level, mas os <a href="#">links sao exemplos de caixa inline-level</a>Vamos ver como tudo isso funciona</p>
+    <div id="bola"></div>
+</body>
+</html>
